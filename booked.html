@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway Reservation Platform</title>
+    <style>
+        body {
+            background-image: url(./forhomepage.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        ul {
+            background-color: rgb(197, 126, 126);
+            height: 1cm;
+            font-size: 25px;
+            list-style-type: none;
+            font-family: sans-serif;
+            padding-top: 10px;
+            overflow: hidden;
+        }
+
+        ol {
+            padding-left: 60px;
+            font-size: x-large;
+        }
+
+        li a {
+            text-decoration: none;
+            color: black;
+            float: left;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        li a:hover {
+            background-color: rgb(191, 237, 239);
+        }
+
+        .out {
+            float: right;
+            margin-right: 20px;
+        }
+
+        table {
+            text-align: center;
+            width: 70%;
+            margin-top: 50px;
+        }
+
+        .details {
+            display: none;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 10px;
+            font-size: 14px;
+            width: 200px;
+            position: absolute;
+            z-index: 10;
+        }
+
+        .det:hover .details {
+            display: block;
+        }
+
+        .det {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="./homepage.html"  >Home</a></li>
+        <li><a href="./booking.html">Book Now</a></li>
+        <li><a href="">PNR Enquiry</a></li>
+        <li><a href="">Train Schedule</a></li>
+        <li><a href="./booked.html">Booked Details</a></li>
+        <li class="out"><a href="./mainpage.html">Log out</a></li>
+    </ul>
+    <p>These are the trains that you've booked:</p>
+    <p>(Just take your cursor on top of any of the following to know more details)</p>
+
+    <ol>
+        <li class="det">Shatabdi Express - 12243
+            <div class="details">
+                Name: Pavan Kalyan <br> 
+                Age: 19 <br>
+                Date: 12/01/2024 <br>
+                Arrival time: 13:30 <br>
+                Departure time: 07:10 <br>
+                From: Chennai Central <br>
+                To: Coimbatore Junction <br>
+            </div>
+        </li>
+
+        <li class="det">Mangalore Central - Chennai Central Superfast Express - 12606
+            <div class="details">
+                Name: Ramesh <br> 
+                Age: 54 <br>
+                Date: 14/02/2024 <br>
+                Arrival time: 04:45 <br>
+                Departure time: 16:55 <br>
+                From: Mangalore Central <br>
+                To: Chennai Central <br>
+            </div>
+        </li>
+
+        <li class="det">Madurai - Chennai Egmore Vaigai Express - 12636
+            <div class="details">
+                Name: Mohan <br> 
+                Age: 19 <br>
+                Date: 18/03/2024 <br>
+                Arrival time: 21:05 <br>
+                Departure time: 07:00 <br>
+                From: Chennai Egmore <br>
+                To: Madurai Junction <br>
+            </div>
+        </li>
+
+        <li class="det">Chennai Egmore - Kanyakumari Express - 12633
+            <div class="details">
+                Name: Krishnamoorthy <br> 
+                Age: 61 <br>
+                Date: 28/04/2024 <br>
+                Arrival time: 06:20 <br>
+                Departure time: 17:10 <br>
+                From: Chennai Egmore <br>
+                To: Kanyakumari Junction <br>
+            </div>
+        </li>
+
+        <li class="det">Coimbatore - Rameswaram Express - 16618
+            <div class="details">
+                Name: Harrish <br> 
+                Age: 26 <br>
+                Date: 12/07/2024 <br>
+                Arrival time: 13:30 <br>
+                Departure time: 07:10 <br>
+                From: Coimbatore Junction <br>
+                To: Rameswaram Junction <br>
+            </div>
+        </li>
+
+        <li class="det">Pothigai Express - 12661
+            <div class="details">
+                Name: Syambu Lingam <br> 
+                Age: 52 <br>
+                Date: 02/08/2015 <br>
+                Arrival time: 03:15 <br>
+                Departure time: 04:15 <br>
+                From: Papanasam Junction <br>
+                To: Thenkasi Junction <br>
+            </div>
+        </li>
+        
+    </ol>
+</body>
+</html>

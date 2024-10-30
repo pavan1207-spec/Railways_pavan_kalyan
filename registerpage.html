@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway Reservation Platform</title>
+    <style>
+        .back{
+            background-image: url(./forlogin3.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%; 
+            height: 90vh;
+        }
+        .heading{
+            text-align: center;
+            font-size: xx-large;
+            color: rgb(188, 193, 197);
+            
+        }
+        .leftside{
+            width: 60%;
+            background-color: rgba(146, 107, 92,0.5);
+            float: left;
+            
+            font-family: monospace;
+            color: aliceblue;
+            
+        }
+        .rightside{
+            width: 38%;
+            background-color: rgba(146, 107, 92,0.5);
+            float: left;
+            margin-left: 20px;
+            font-family: monospace;
+            color: aliceblue;
+            
+        }
+        .keela{
+            clear: both;
+            background-color: rgba(146, 107, 92,0.5);
+            width: 60%;
+            margin-top: 400px;
+            margin-left: 280px;
+            font-family: monospace;
+            color: aliceblue;
+            height: 80px;
+            
+            
+        }
+        
+        form{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 10px;
+            align-items: center;
+        }
+        label{
+            text-align: right;
+            padding-right: 10px;
+        }
+        input, textarea{
+            width: 80%;
+            padding: 8px;
+            
+            
+
+        }
+        input[type="radio"],input[type="checkbox"]{
+            width: auto;
+            margin-right: 5px;
+        }
+        .miniheading{
+            padding-left: 10px;
+            font-size: x-large;
+        }
+        
+    </style>
+</head>
+<body  class="back">
+    <div>
+        <p class="heading">Registration Page</p> <br> <br>
+
+    </div>
+
+     
+    <div class="leftside">
+        <p class="miniheading">Personal Details<p>
+
+        <form action="">
+            <label for="">Name:</label>
+            <input type="text" name="" id="">
+            <label for="">Date of brith:</label>
+            <input type="date" name="" id=""> 
+            <label for="gender">Gender:</label>
+            <div>
+                <input type="radio" id="male" name="gender" value="male">Male
+                
+                <input type="radio" id="female" name="gender" value="female">Female
+               
+            </div>
+            <label for="">Contact Number:</label>
+            <input type="tel">  
+            <label for="">Email:</label>
+            <input type="email" name="" id=""> 
+            <label for="" style="float: left;">Address:</label>
+            <textarea name="" id="" style="float: left;"></textarea> <br>
+        </form>
+        
+        
+            
+    </div>
+
+    <div class="rightside">
+        <p class="miniheading">Login Credentials</p>
+        <p style="text-align: center;">Create your own credentials by choosing a Username and password</p>
+
+        <form action="">
+            <label for="">Username:</label>
+            <input type="text">
+            <label for="">Password:</label>
+            <input type="password">
+            <label for="">Re-enter password:</label>
+            <input type="password"> <br>
+         </form>
+         <p style="text-align: center;">(The username should not start with any digits. The password should atleast have one alphabet, one number, one character)</p>
+          <br> <br> <br>  
+    </div>
+    <div class="keela">
+        <br>
+        <input type="checkbox" required>I hereby declare all the information stated above is true, and I also agree to all the Terms and Conditions 
+        <br> <br>
+        <center><a href="./loginpage.html"><button>Submit</button></a></center>
+    </div>
+    
+    
+    
+</body>
+</html>
